@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SΛVG Esports — Rise. Compete. Dominate.</title>
-  <meta name="description" content="SΛVG Esports is a professional esports organization competing in Rocket League and Fortnite. Based in Florida.">
-  <meta property="og:title" content="SΛVG Esports — Rise. Compete. Dominate.">
-  <meta property="og:description" content="Professional esports organization competing in Rocket League and Fortnite.">
+  <title>SΛVG Esports If it's not SΛVG, it's average.</title>
+  <meta name="description" content="SΛVG Esports is a professional esports organization competing across multiple titles in the United States.">
+  <meta property="og:title" content="SΛVG Esports">
+  <meta property="og:description" content="If it's not SΛVG, it's average.">
   <meta property="og:url" content="https://www.savgesports.com">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,287 +16,304 @@
 </head>
 <body>
 
-  <!-- ══ NAV ══ -->
-  <nav class="nav" id="nav">
-    <a href="index.html" class="nav-logo"><img src="assets/savg-logo.jpg" alt="SAVG" class="nav-logo-img">SΛ<span class="grad">VG</span></a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="teams.html">Teams</a></li>
-      <li><a href="creators.html">Creators</a></li>
-      <li><a href="news.html">News</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="partners.html" class="nav-cta">Partner With Us</a></li>
-    </ul>
-    <button class="nav-burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-logo">
+    <img src="assets/savg-logo.jpg" alt="SAVG" class="nav-logo-img">
+    <span class="savg">SΛVG</span>&nbsp;ESPORTS
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="games.html">Compete</a></li>
+    <li><a href="teams.html">Roster</a></li>
+    <li><a href="creators.html">Creators</a></li>
+    <li><a href="partners.html">Partners</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="apply.html" class="nav-cta">Apply Now</a></li>
+  </ul>
+  <button class="nav-burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
 
-  <!-- ══ HERO ══ -->
-  <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-lambda l1">Λ</div>
-    <div class="hero-lambda l2">Λ</div>
+<!-- HERO -->
+<section class="hero">
+  <canvas id="particles"></canvas>
+  <div class="hero-glow"></div>
+  <div class="hero-grid"></div>
 
-    <div class="hero-content">
-      <img src="assets/savg-logo.jpg" alt="SAVG Esports" class="hero-emblem">
-      <span class="eyebrow">Rocket League · Fortnite · Florida</span>
-      <h1 class="hero-title">
-        SΛ<span class="grad">VG</span><br>ESPORTS
-      </h1>
-      <p class="hero-sub">Rise. Compete. Dominate.</p>
-      <p class="hero-desc">
-        We are a professional esports organization built for the next generation of competitors and content creators. Competing at the highest level in Rocket League and Fortnite.
-      </p>
-      <div class="hero-actions">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <span class="eyebrow" style="margin-bottom:1.75rem;">Professional Esports Organization</span>
+      <div class="hero-brand">
+        <img src="assets/savg-logo.jpg" alt="SAVG Esports" class="hero-logo-mark">
+        <h1 class="hero-wordmark">
+          <span class="savg">SΛVG</span>
+          ESPORTS
+        </h1>
+      </div>
+      <p class="hero-motto">"If it's not <span class="savg">SΛVG</span>, it's average."</p>
+      <div class="hero-ctas">
         <a href="teams.html" class="btn btn-primary">Meet the Roster</a>
         <a href="partners.html" class="btn btn-outline">Partner With Us</a>
       </div>
-
-      <div class="stats-bar reveal">
-        <div class="stat-item">
-          <span class="stat-num grad">2</span>
-          <span class="stat-lbl">Game Divisions</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-num grad">FL</span>
-          <span class="stat-lbl">Licensed LLC</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-num grad">RL</span>
-          <span class="stat-lbl">Rocket League</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-num grad">FN</span>
-          <span class="stat-lbl">Fortnite</span>
-        </div>
-      </div>
     </div>
-  </section>
-
-  <!-- ══ TEAMS PREVIEW ══ -->
-  <section class="section">
-
-    <!-- Rocket League -->
-    <div style="margin-bottom: 3.5rem;">
-      <div class="game-sep">
-        <span class="tag tag-rl">Rocket League</span>
-        <div class="line"></div>
-        <a href="teams.html#rocket-league" class="btn btn-ghost">Full Roster →</a>
-      </div>
-      <div class="roster-grid">
-        <div class="player-card reveal reveal-2">
-          <div class="pc-img"><span class="placeholder-lambda">Λ</span></div>
-          <div class="pc-body">
-            <div class="pc-tag">TBA</div>
-            <div class="pc-role">Striker · Rocket League</div>
-          </div>
-        </div>
-        <div class="player-card reveal reveal-3">
-          <div class="pc-img"><span class="placeholder-lambda">Λ</span></div>
-          <div class="pc-body">
-            <div class="pc-tag">TBA</div>
-            <div class="pc-role">Midfield · Rocket League</div>
-          </div>
-        </div>
-        <div class="player-card reveal reveal-4">
-          <div class="pc-img"><span class="placeholder-lambda">Λ</span></div>
-          <div class="pc-body">
-            <div class="pc-tag">TBA</div>
-            <div class="pc-role">Goalkeeper · Rocket League</div>
-          </div>
-        </div>
-      </div>
+    <div class="hero-right">
+      <div class="hero-lambda-deco">Λ</div>
     </div>
+  </div>
+</section>
 
-    <!-- Fortnite -->
-    <div>
-      <div class="game-sep">
-        <span class="tag tag-fn">Fortnite</span>
-        <div class="line"></div>
-        <a href="teams.html#fortnite" class="btn btn-ghost">Full Roster →</a>
-      </div>
-      <div class="roster-grid">
-        <div class="player-card reveal reveal-2">
-          <div class="pc-img" style="background: linear-gradient(135deg, var(--bg-elevated), rgba(6,182,212,0.08));"><span class="placeholder-lambda" style="color: rgba(6,182,212,0.18);">Λ</span></div>
-          <div class="pc-body">
-            <div class="pc-tag">TBA</div>
-            <div class="pc-role">Duos · Fortnite</div>
-          </div>
-        </div>
-        <div class="player-card reveal reveal-3">
-          <div class="pc-img" style="background: linear-gradient(135deg, var(--bg-elevated), rgba(6,182,212,0.08));"><span class="placeholder-lambda" style="color: rgba(6,182,212,0.18);">Λ</span></div>
-          <div class="pc-body">
-            <div class="pc-tag">TBA</div>
-            <div class="pc-role">Duos · Fortnite</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- ══ CREATORS PREVIEW ══ -->
-  <section class="section">
-    <div class="section-row reveal">
-      <div class="section-hd" style="margin-bottom:0">
-        <span class="eyebrow" style="margin-bottom:0.5rem">Content & Streaming</span>
-        <h2 class="section-title">Our <span class="grad">Creators</span></h2>
-      </div>
-      <a href="creators.html" class="btn btn-outline">All Creators →</a>
-    </div>
-    <div class="creators-grid">
-      <div class="creator-card reveal reveal-2">
-        <div class="cc-avatar">Λ</div>
-        <div class="cc-name">Creator TBA</div>
-        <div class="cc-handle">@handle</div>
-        <div class="cc-bio">Full-time content creator. Rocket League mechanics, highlights, and variety content.</div>
-        <div class="cc-platforms">
-          <span class="badge badge-twitch">Twitch</span>
-          <span class="badge badge-yt">YouTube</span>
-        </div>
-      </div>
-      <div class="creator-card reveal reveal-3">
-        <div class="cc-avatar">Λ</div>
-        <div class="cc-name">Creator TBA</div>
-        <div class="cc-handle">@handle</div>
-        <div class="cc-bio">Fortnite specialist. High-energy competitive content across TikTok and YouTube.</div>
-        <div class="cc-platforms">
-          <span class="badge badge-tiktok">TikTok</span>
-          <span class="badge badge-yt">YouTube</span>
-        </div>
-      </div>
-      <div class="creator-card reveal reveal-4">
-        <div class="cc-avatar">Λ</div>
-        <div class="cc-name">Creator TBA</div>
-        <div class="cc-handle">@handle</div>
-        <div class="cc-bio">Multi-platform streamer. Building community through live gameplay and IRL content.</div>
-        <div class="cc-platforms">
-          <span class="badge badge-twitch">Twitch</span>
-          <span class="badge badge-x">X</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══ PARTNERS STRIP ══ -->
-  <div class="partners-strip">
-    <p class="label">Official Partners</p>
-    <div class="partner-logos">
-      <a href="partners.html" class="partner-slot" aria-label="Pest Pro"><img src="assets/partner-pestpro.jpg" alt="Pest Pro"></a>
-      <a href="partners.html" class="partner-slot" aria-label="Substrat AI"><img src="assets/partner-substrat-ai.jpg" alt="Substrat AI"></a>
-      <a href="partners.html" class="partner-slot" aria-label="HPT"><img src="assets/partner-hpt.png" alt="HPT"></a>
-      <a href="partners.html" class="partner-slot" aria-label="JLM"><img src="assets/partner-jlm.png" alt="JLM"></a>
-    </div>
-    <a href="partners.html" class="btn btn-outline">Become a Partner</a>
+<!-- WE COMPETE -->
+<section class="section">
+  <div class="section-hd reveal">
+    <span class="eyebrow" style="margin-bottom:1rem;">Our Divisions</span>
+    <h2 class="section-title">We <span class="savg">Compete</span></h2>
   </div>
 
-  <!-- ══ NEWS PREVIEW ══ -->
-  <section class="section">
+  <div style="margin-bottom:2rem;">
+    <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.25rem;">
+      <span class="tag tag-live">Active</span>
+      <div class="divider" style="flex:1;"></div>
+      <a href="games.html" class="btn btn-ghost">All Games</a>
+    </div>
+    <div class="games-grid two-col" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));">
+      <div class="game-card active gc-rl reveal reveal-d1">
+        <div class="game-card-bg"></div>
+        <div class="game-card-overlay"></div>
+        <span class="game-card-badge"><span class="tag tag-live">Active</span></span>
+        <div class="game-card-body">
+          <div class="gc-title">Rocket League</div>
+          <div class="gc-desc">RLCS competitive division. Playing at the highest level of organized Rocket League.</div>
+        </div>
+      </div>
+      <div class="game-card active gc-fn reveal reveal-d2">
+        <div class="game-card-bg"></div>
+        <div class="game-card-overlay"></div>
+        <span class="game-card-badge"><span class="tag tag-live">Active</span></span>
+        <div class="game-card-body">
+          <div class="gc-title">Fortnite</div>
+          <div class="gc-desc">FNCS competitive division. Built for players who compete at the top end of Battle Royale.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.25rem;">
+      <span class="tag tag-soon">Expanding</span>
+      <div class="divider" style="flex:1;"></div>
+      <a href="games.html" class="btn btn-ghost">Full Roadmap</a>
+    </div>
+    <div class="games-grid">
+      <div class="game-card gc-cod reveal reveal-d1">
+        <div class="game-card-bg"></div>
+        <div class="game-card-overlay"></div>
+        <span class="game-card-badge"><span class="tag tag-soon">Coming Soon</span></span>
+        <div class="game-card-body"><div class="gc-title">Call of Duty</div></div>
+      </div>
+      <div class="game-card gc-val reveal reveal-d2">
+        <div class="game-card-bg"></div>
+        <div class="game-card-overlay"></div>
+        <span class="game-card-badge"><span class="tag tag-soon">Coming Soon</span></span>
+        <div class="game-card-body"><div class="gc-title">Valorant</div></div>
+      </div>
+      <div class="game-card gc-cs reveal reveal-d3">
+        <div class="game-card-bg"></div>
+        <div class="game-card-overlay"></div>
+        <span class="game-card-badge"><span class="tag tag-soon">Coming Soon</span></span>
+        <div class="game-card-body"><div class="gc-title">Counter-Strike</div></div>
+      </div>
+      <div class="game-card gc-apex reveal reveal-d4">
+        <div class="game-card-bg"></div>
+        <div class="game-card-overlay"></div>
+        <span class="game-card-badge"><span class="tag tag-soon">Coming Soon</span></span>
+        <div class="game-card-body"><div class="gc-title">Apex Legends</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ROSTER PREVIEW -->
+<section class="section">
+  <div class="section-row reveal">
+    <div class="section-hd" style="margin-bottom:0;">
+      <span class="eyebrow" style="margin-bottom:0.5rem;">The Team</span>
+      <h2 class="section-title">Our <span class="savg">Roster</span></h2>
+    </div>
+    <a href="teams.html" class="btn btn-outline">Full Roster</a>
+  </div>
+  <div class="roster-grid">
+    <div class="player-card reveal reveal-d1">
+      <div class="pc-img"><span class="pc-lambda">Λ</span></div>
+      <div class="pc-body"><div class="pc-tag">TBA</div><span class="tag tag-rl">Rocket League</span></div>
+    </div>
+    <div class="player-card reveal reveal-d2">
+      <div class="pc-img"><span class="pc-lambda">Λ</span></div>
+      <div class="pc-body"><div class="pc-tag">TBA</div><span class="tag tag-rl">Rocket League</span></div>
+    </div>
+    <div class="player-card reveal reveal-d3">
+      <div class="pc-img" style="background:linear-gradient(135deg,var(--bg-elevated),rgba(139,92,246,0.1));"><span class="pc-lambda">Λ</span></div>
+      <div class="pc-body"><div class="pc-tag">TBA</div><span class="tag tag-fn">Fortnite</span></div>
+    </div>
+    <div class="player-card reveal reveal-d4">
+      <div class="pc-img" style="background:linear-gradient(135deg,var(--bg-elevated),rgba(139,92,246,0.1));"><span class="pc-lambda">Λ</span></div>
+      <div class="pc-body"><div class="pc-tag">TBA</div><span class="tag tag-fn">Fortnite</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="section-full diagonal-both" style="background:var(--bg-card);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="inner">
     <div class="section-row reveal">
-      <div class="section-hd" style="margin-bottom:0">
-        <span class="eyebrow" style="margin-bottom:0.5rem">Latest</span>
-        <h2 class="section-title">News & <span class="grad">Updates</span></h2>
+      <div class="section-hd" style="margin-bottom:0;">
+        <span class="eyebrow" style="margin-bottom:0.5rem;">Content & Streaming</span>
+        <h2 class="section-title">Our <span class="savg">Creators</span></h2>
       </div>
-      <a href="news.html" class="btn btn-outline">All News →</a>
+      <a href="creators.html" class="btn btn-outline">All Creators</a>
     </div>
-    <div class="news-grid">
-      <a href="news.html" class="news-card reveal reveal-2">
-        <div class="nc-img" style="background: linear-gradient(135deg, var(--bg-elevated), rgba(37,99,235,0.28));"></div>
-        <div class="nc-body">
-          <div class="nc-date">May 2025 · Organization</div>
-          <div class="nc-title">SΛVG Esports Officially Launches as a Professional Organization</div>
-          <div class="nc-excerpt">SΛVG Esports is proud to announce its official launch as a professional esports organization, competing in Rocket League and Fortnite.</div>
-        </div>
-      </a>
-      <a href="news.html" class="news-card reveal reveal-3">
-        <div class="nc-img" style="background: linear-gradient(135deg, var(--bg-elevated), rgba(37,99,235,0.18));"></div>
-        <div class="nc-body">
-          <div class="nc-date">Coming Soon · Rocket League</div>
-          <div class="nc-title">SΛVG Rocket League Roster Announcement</div>
-          <div class="nc-excerpt">Stay tuned for our official Rocket League roster reveal. Something big is on the way.</div>
-        </div>
-      </a>
-      <a href="news.html" class="news-card reveal reveal-4">
-        <div class="nc-img" style="background: linear-gradient(135deg, var(--bg-elevated), rgba(6,182,212,0.22));"></div>
-        <div class="nc-body">
-          <div class="nc-date">Coming Soon · Fortnite</div>
-          <div class="nc-title">SΛVG Fortnite Division — Roster and Plans Revealed</div>
-          <div class="nc-excerpt">Our Fortnite division is taking shape. Meet the team built to compete at the highest level.</div>
-        </div>
-      </a>
-    </div>
-  </section>
-
-  <!-- ══ CTA BLOCK ══ -->
-  <section class="section" style="padding-top:0">
-    <div class="cta-block reveal">
-      <span class="eyebrow" style="justify-content:center; margin-bottom:1rem">Business Development</span>
-      <h2 class="cta-title">Partner With <span class="grad">SΛVG</span></h2>
-      <p class="cta-desc">Connect your brand with a passionate, growing esports audience. We offer custom partnership packages for brands of all sizes.</p>
-      <a href="partners.html" class="btn btn-primary">View Partnership Opportunities</a>
-    </div>
-  </section>
-
-  <!-- ══ FOOTER ══ -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-grid">
-
-        <div class="footer-brand">
-          <a href="index.html" class="footer-logo" style="display:flex;align-items:center;gap:0.75rem;text-decoration:none;"><img src="assets/savg-logo.jpg" alt="SAVG" style="width:40px;height:40px;border-radius:50%;object-fit:cover;mix-blend-mode:lighten;opacity:0.85;flex-shrink:0;"><span class="grad">SΛVG ESPORTS</span></a>
-          <p class="footer-desc">Professional esports organization competing in Rocket League and Fortnite. Built to win. Based in Florida.</p>
-          <div class="social-row">
-            <a href="#" class="social-btn" aria-label="X / Twitter">𝕏</a>
-            <a href="#" class="social-btn" aria-label="Twitch">Tw</a>
-            <a href="#" class="social-btn" aria-label="YouTube">YT</a>
-            <a href="#" class="social-btn" aria-label="Instagram">IG</a>
-            <a href="https://www.tiktok.com/@savgesports" class="social-btn" target="_blank" rel="noopener" aria-label="TikTok">TK</a>
-            <a href="#" class="social-btn" aria-label="Discord">Dc</a>
-          </div>
-        </div>
-
-        <div class="footer-col">
-          <h4>Navigate</h4>
-          <ul>
-            <li><a href="teams.html">Teams</a></li>
-            <li><a href="creators.html">Creators</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="about.html">About</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Organization</h4>
-          <ul>
-            <li><a href="partners.html">Partners</a></li>
-            <li><a href="about.html#contact">Contact</a></li>
-            <li><a href="mailto:info@savgesports.com">Media Inquiries</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Compete</h4>
-          <ul>
-            <li><a href="teams.html#rocket-league">Rocket League</a></li>
-            <li><a href="teams.html#fortnite">Fortnite</a></li>
-            <li><a href="creators.html">Content Creators</a></li>
-          </ul>
-        </div>
-
+    <div class="creators-grid">
+      <div class="creator-card reveal reveal-d1">
+        <div class="cc-avatar">Λ</div>
+        <div class="cc-name">Creator TBA</div>
+        <div class="cc-handle">@handle</div>
+        <div class="cc-bio">Rocket League content and competitive commentary. Full-time creator building a loyal audience.</div>
+        <div class="cc-plats"><span class="badge badge-twitch">Twitch</span><span class="badge badge-yt">YouTube</span></div>
       </div>
-
-      <div class="footer-bottom">
-        <p class="footer-legal">© 2025 Savg Esports, LLC. All rights reserved.&nbsp;&nbsp;Savg Esports, LLC is a Florida limited liability company.</p>
-        <nav class="footer-policy">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Use</a>
-        </nav>
+      <div class="creator-card reveal reveal-d2">
+        <div class="cc-avatar">Λ</div>
+        <div class="cc-name">Creator TBA</div>
+        <div class="cc-handle">@handle</div>
+        <div class="cc-bio">Fortnite specialist. High-energy gameplay and short-form content across TikTok and YouTube.</div>
+        <div class="cc-plats"><a href="https://www.tiktok.com/@savgesports" class="badge badge-tiktok" target="_blank" rel="noopener">TikTok</a><span class="badge badge-yt">YouTube</span></div>
+      </div>
+      <div class="creator-card reveal reveal-d3">
+        <div class="cc-avatar">Λ</div>
+        <div class="cc-name">Creator TBA</div>
+        <div class="cc-handle">@handle</div>
+        <div class="cc-bio">Multi-platform variety streamer. Live 5 days a week across Rocket League and Fortnite.</div>
+        <div class="cc-plats"><span class="badge badge-twitch">Twitch</span><span class="badge badge-x">X</span></div>
       </div>
     </div>
-  </footer>
+  </div>
+</div>
 
-  <script src="js/main.js"></script>
+<!-- PARTNERS -->
+<div class="partners-strip">
+  <p class="ps-label">Official Partners</p>
+  <div class="partner-logos">
+    <a href="partners.html" class="partner-logo-item"><img src="assets/partner-pestpro.jpg" alt="Pest Pro"></a>
+    <a href="partners.html" class="partner-logo-item"><img src="assets/partner-substrat-ai.jpg" alt="Substrat AI"></a>
+    <a href="partners.html" class="partner-logo-item"><img src="assets/partner-jlm.png" alt="JLM Marketing" class="no-blend"></a>
+    <a href="partners.html" class="partner-logo-item"><img src="assets/partner-hpt.png" alt="Healthy Phone Tech" class="no-blend"></a>
+  </div>
+  <a href="partners.html" class="btn btn-outline">Become a Partner</a>
+</div>
+
+<!-- NEWS -->
+<section class="section">
+  <div class="section-row reveal">
+    <div class="section-hd" style="margin-bottom:0;">
+      <span class="eyebrow" style="margin-bottom:0.5rem;">Latest</span>
+      <h2 class="section-title">News & <span class="savg">Updates</span></h2>
+    </div>
+    <a href="news.html" class="btn btn-outline">All News</a>
+  </div>
+  <div class="news-grid">
+    <a href="news.html" class="news-card reveal reveal-d1">
+      <div class="nc-img" style="background:linear-gradient(135deg,var(--bg-elevated),rgba(37,99,235,0.3));"></div>
+      <div class="nc-body">
+        <div class="nc-date">May 2025 · Organization</div>
+        <div class="nc-title">SΛVG Esports Launches as a Professional Organization</div>
+        <div class="nc-exc">SΛVG Esports announces its arrival as a fully structured professional esports organization.</div>
+      </div>
+    </a>
+    <a href="news.html" class="news-card reveal reveal-d2">
+      <div class="nc-img" style="background:linear-gradient(135deg,var(--bg-elevated),rgba(37,99,235,0.18));"></div>
+      <div class="nc-body">
+        <div class="nc-date">Coming Soon · Rocket League</div>
+        <div class="nc-title">Rocket League Roster Announcement</div>
+        <div class="nc-exc">The full SΛVG Rocket League squad is about to be revealed. Stay close.</div>
+      </div>
+    </a>
+    <a href="news.html" class="news-card reveal reveal-d3">
+      <div class="nc-img" style="background:linear-gradient(135deg,var(--bg-elevated),rgba(139,92,246,0.22));"></div>
+      <div class="nc-body">
+        <div class="nc-date">Coming Soon · Fortnite</div>
+        <div class="nc-title">Fortnite Division Full Roster Reveal</div>
+        <div class="nc-exc">Built for the highest level of FNCS competition. The announcement is coming.</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section" style="padding-top:0;">
+  <div class="cta-block reveal">
+    <span class="eyebrow eyebrow-center" style="margin-bottom:1rem;">Business Development</span>
+    <h2 class="cta-title">Partner With <span class="savg">SΛVG</span></h2>
+    <p class="cta-desc">Connect your brand with a passionate, growing esports audience. We build custom partnerships built around what your brand actually needs.</p>
+    <a href="partners.html" class="btn btn-primary">View Partnership Opportunities</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="footer-logo-link">
+          <img src="assets/savg-logo.jpg" alt="SAVG" class="footer-logo-img">
+          <span class="footer-logo-text savg">SΛVG ESPORTS</span>
+        </a>
+        <p class="footer-desc">Professional esports organization competing at the highest level. United States.</p>
+        <div class="social-row">
+          <a href="#" class="social-btn" aria-label="X">𝕏</a>
+          <a href="#" class="social-btn" aria-label="Twitch">Tw</a>
+          <a href="#" class="social-btn" aria-label="YouTube">YT</a>
+          <a href="#" class="social-btn" aria-label="Instagram">IG</a>
+          <a href="https://www.tiktok.com/@savgesports" class="social-btn" target="_blank" rel="noopener" aria-label="TikTok">TK</a>
+          <a href="#" class="social-btn" aria-label="Discord">Dc</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Compete</h4>
+        <ul>
+          <li><a href="games.html">All Games</a></li>
+          <li><a href="teams.html">Roster</a></li>
+          <li><a href="creators.html">Creators</a></li>
+          <li><a href="apply.html">Apply Now</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Organization</h4>
+        <ul>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="merch.html">Merch</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="about.html#contact">Contact</a></li>
+          <li><a href="mailto:info@savgesports.com">General</a></li>
+          <li><a href="mailto:partnerships@savgesports.com">Partnerships</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-legal">© 2025 Savg Esports, LLC. All rights reserved. Savg Esports, LLC is a Florida limited liability company.</p>
+      <nav class="footer-policy">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>

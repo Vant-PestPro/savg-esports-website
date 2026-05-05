@@ -1,230 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>News | SΛVG Esports</title>
   <meta name="description" content="Latest news, announcements, and updates from SΛVG Esports.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    /* ── Featured Post ── */
-    .featured-post {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      overflow: hidden;
-      text-decoration: none;
-      color: inherit;
-      margin-bottom: 3rem;
-      transition: border-color 0.3s;
-    }
-    .featured-post:hover { border-color: var(--border-accent); }
-    .fp-img {
-      min-height: 340px;
-      background: linear-gradient(135deg, var(--bg-elevated), rgba(37,99,235,0.3));
-      position: relative;
-    }
-    .fp-img .feat-label {
-      position: absolute;
-      top: 1.25rem;
-      left: 1.25rem;
-      background: var(--gradient);
-      color: #fff;
-      font-size: 0.62rem;
-      font-weight: 700;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      padding: 0.25rem 0.75rem;
-      border-radius: 3px;
-    }
-    .fp-body {
-      padding: 3rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    .fp-date { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 1rem; }
-    .fp-title { font-family: var(--font-display); font-size: clamp(1.5rem, 3vw, 2.25rem); font-weight: 700; line-height: 1.2; margin-bottom: 1rem; }
-    .fp-excerpt { font-size: 0.9rem; color: var(--text-sub); line-height: 1.75; margin-bottom: 1.75rem; }
-    .fp-read { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent-cyan); }
-
-    /* ── Category Filters ── */
-    .filter-row {
-      display: flex;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-      margin-bottom: 2.5rem;
-    }
-    .filter-btn {
-      padding: 0.4rem 1rem;
-      border-radius: 3px;
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      cursor: pointer;
-      border: 1px solid var(--border);
-      background: var(--bg-card);
-      color: var(--text-sub);
-      transition: all 0.2s;
-    }
-    .filter-btn:hover, .filter-btn.active {
-      border-color: var(--border-accent);
-      color: var(--text);
-      background: rgba(37,99,235,0.1);
-    }
-
-    @media (max-width: 768px) {
-      .featured-post { grid-template-columns: 1fr; }
-      .fp-img { min-height: 200px; }
-      .fp-body { padding: 1.75rem; }
-    }
-  </style>
 </head>
 <body>
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-logo"><img src="assets/savg-logo.jpg" alt="SAVG" class="nav-logo-img"><span class="savg">SΛVG</span>&nbsp;ESPORTS</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="games.html">Compete</a></li><li><a href="teams.html">Roster</a></li><li><a href="creators.html">Creators</a></li><li><a href="partners.html">Partners</a></li><li><a href="news.html">News</a></li><li><a href="about.html">About</a></li>
+    <li><a href="apply.html" class="nav-cta">Apply Now</a></li>
+  </ul>
+  <button class="nav-burger" id="burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
 
-  <!-- ══ NAV ══ -->
-  <nav class="nav" id="nav">
-    <a href="index.html" class="nav-logo"><img src="assets/savg-logo.jpg" alt="SAVG" class="nav-logo-img">SΛ<span class="grad">VG</span></a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="teams.html">Teams</a></li>
-      <li><a href="creators.html">Creators</a></li>
-      <li><a href="news.html">News</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="partners.html" class="nav-cta">Partner With Us</a></li>
-    </ul>
-    <button class="nav-burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
+<section class="page-hero" style="min-height:45vh;">
+  <div class="ph-bg"></div>
+  <div class="ph-inner">
+    <span class="eyebrow" style="margin-bottom:1.25rem;">Updates</span>
+    <h1 class="ph-title">News & <span class="savg">Announcements</span></h1>
+  </div>
+</section>
 
-  <!-- ══ PAGE HERO ══ -->
-  <section class="page-hero" style="min-height:45vh;">
-    <div class="hero-bg"></div>
-    <div class="hero-content">
-      <span class="eyebrow">Updates</span>
-      <h1 class="ph-title">News &amp; <span class="grad">Announcements</span></h1>
+<section class="section">
+  <a href="#launch" class="news-featured reveal" id="launch">
+    <div class="nf-img"><span class="nf-label">Featured</span></div>
+    <div class="nf-body">
+      <div class="nf-date">May 2025 · Organization</div>
+      <div class="nf-title">SΛVG Esports Launches as a Professional Organization</div>
+      <div class="nf-exc">SΛVG Esports announces its arrival as a fully structured professional esports organization. With active divisions in Rocket League and Fortnite and an expansion roadmap already in motion, SΛVG enters the space ready to compete and build something real.</div>
+      <span class="nf-read">Read More</span>
     </div>
-  </section>
+  </a>
 
-  <!-- ══ NEWS CONTENT ══ -->
-  <section class="section">
+  <div class="filter-row reveal">
+    <button class="filter-btn active">All</button>
+    <button class="filter-btn">Organization</button>
+    <button class="filter-btn">Rocket League</button>
+    <button class="filter-btn">Fortnite</button>
+    <button class="filter-btn">Creators</button>
+    <button class="filter-btn">Partners</button>
+  </div>
 
-    <!-- Featured -->
-    <a href="#launch" class="featured-post reveal" id="launch">
-      <div class="fp-img">
-        <span class="feat-label">Featured</span>
-      </div>
-      <div class="fp-body">
-        <div class="fp-date">May 2025 &nbsp;·&nbsp; Organization</div>
-        <div class="fp-title">SΛVG Esports Officially Launches as a Professional Organization</div>
-        <div class="fp-excerpt">
-          Today marks the official launch of SΛVG Esports — a Florida-based professional esports organization built to compete in Rocket League and Fortnite. Founded as a licensed LLC, SΛVG enters the esports landscape with a full roster of professional players, streamers, and content creators ready to compete and build community at the highest level.
-        </div>
-        <span class="fp-read">Read More →</span>
+  <div class="news-grid">
+    <a href="#" class="news-card reveal reveal-d1">
+      <div class="nc-img" style="background:linear-gradient(135deg,var(--bg-elevated),rgba(37,99,235,0.25));"></div>
+      <div class="nc-body">
+        <div class="nc-date">Coming Soon · Rocket League</div>
+        <div class="nc-title">Rocket League Roster Announcement</div>
+        <div class="nc-exc">The full SΛVG Rocket League squad is about to be revealed. Stay close to the channels.</div>
       </div>
     </a>
-
-    <!-- Filter Row -->
-    <div class="filter-row reveal">
-      <button class="filter-btn active">All</button>
-      <button class="filter-btn">Organization</button>
-      <button class="filter-btn">Rocket League</button>
-      <button class="filter-btn">Fortnite</button>
-      <button class="filter-btn">Creators</button>
-    </div>
-
-    <!-- News Grid -->
-    <div class="news-grid">
-
-      <a href="#" class="news-card reveal">
-        <div class="nc-img" style="background: linear-gradient(135deg, var(--bg-elevated), rgba(37,99,235,0.22));"></div>
-        <div class="nc-body">
-          <div class="nc-date">Coming Soon &nbsp;·&nbsp; <span class="tag tag-rl" style="padding:0.15rem 0.5rem; font-size:0.6rem;">Rocket League</span></div>
-          <div class="nc-title">SΛVG Rocket League Roster Announcement</div>
-          <div class="nc-excerpt">Our official Rocket League roster is nearly set. Stay tuned for the full reveal — names, faces, and everything you need to know about the squad heading into competition.</div>
-        </div>
-      </a>
-
-      <a href="#" class="news-card reveal reveal-2">
-        <div class="nc-img" style="background: linear-gradient(135deg, var(--bg-elevated), rgba(6,182,212,0.22));"></div>
-        <div class="nc-body">
-          <div class="nc-date">Coming Soon &nbsp;·&nbsp; <span class="tag tag-fn" style="padding:0.15rem 0.5rem; font-size:0.6rem;">Fortnite</span></div>
-          <div class="nc-title">SΛVG Fortnite Division — Roster and Plans</div>
-          <div class="nc-excerpt">Our Fortnite roster is taking shape. We'll have the full announcement soon, including the competitive calendar they'll be targeting in their first season under the SΛVG banner.</div>
-        </div>
-      </a>
-
-      <a href="#" class="news-card reveal reveal-3">
-        <div class="nc-img" style="background: linear-gradient(135deg, var(--bg-elevated), rgba(37,99,235,0.15));"></div>
-        <div class="nc-body">
-          <div class="nc-date">Coming Soon &nbsp;·&nbsp; <span class="tag tag-org" style="padding:0.15rem 0.5rem; font-size:0.6rem;">Creators</span></div>
-          <div class="nc-title">Creator Roster Announcement — Meet the SΛVG Content Team</div>
-          <div class="nc-excerpt">Beyond the competition floor, SΛVG is building a creator network that matches the ambition of our competitive teams. Creator reveal coming soon.</div>
-        </div>
-      </a>
-
-      <a href="#" class="news-card reveal reveal-4">
-        <div class="nc-img" style="background: linear-gradient(135deg, var(--bg-elevated), rgba(37,99,235,0.12));"></div>
-        <div class="nc-body">
-          <div class="nc-date">Coming Soon &nbsp;·&nbsp; <span class="tag tag-org" style="padding:0.15rem 0.5rem; font-size:0.6rem;">Partners</span></div>
-          <div class="nc-title">SΛVG Esports Announces First Official Partnership</div>
-          <div class="nc-excerpt">We're building out our partner network and have some exciting announcements coming. Stay tuned for our first official sponsorship reveal.</div>
-        </div>
-      </a>
-
-    </div>
-  </section>
-
-  <!-- ══ NEWSLETTER / SOCIAL ══ -->
-  <section class="section" style="padding-top:0">
-    <div class="cta-block reveal">
-      <span class="eyebrow" style="justify-content:center; margin-bottom:1rem;">Stay Connected</span>
-      <h2 class="cta-title">Follow <span class="grad">SΛVG</span></h2>
-      <p class="cta-desc">Don't miss roster announcements, match results, and content drops. Follow SΛVG across every platform.</p>
-      <div style="display:flex; gap:0.75rem; justify-content:center; flex-wrap:wrap;">
-        <a href="#" class="btn btn-outline" style="font-size:0.78rem; padding:0.65rem 1.25rem;">𝕏 Twitter</a>
-        <a href="#" class="btn btn-outline" style="font-size:0.78rem; padding:0.65rem 1.25rem;">Twitch</a>
-        <a href="#" class="btn btn-outline" style="font-size:0.78rem; padding:0.65rem 1.25rem;">YouTube</a>
-        <a href="#" class="btn btn-outline" style="font-size:0.78rem; padding:0.65rem 1.25rem;">Instagram</a>
-        <a href="https://www.tiktok.com/@savgesports" class="btn btn-outline" style="font-size:0.78rem; padding:0.65rem 1.25rem;" target="_blank" rel="noopener">TikTok</a>
-        <a href="#" class="btn btn-outline" style="font-size:0.78rem; padding:0.65rem 1.25rem;">Discord</a>
+    <a href="#" class="news-card reveal reveal-d2">
+      <div class="nc-img" style="background:linear-gradient(135deg,var(--bg-elevated),rgba(139,92,246,0.25));"></div>
+      <div class="nc-body">
+        <div class="nc-date">Coming Soon · Fortnite</div>
+        <div class="nc-title">Fortnite Division Full Roster Reveal</div>
+        <div class="nc-exc">Our Fortnite squad is built for FNCS competition. The announcement drops soon.</div>
       </div>
-    </div>
-  </section>
-
-  <!-- ══ FOOTER ══ -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="footer-logo" style="display:flex;align-items:center;gap:0.75rem;text-decoration:none;"><img src="assets/savg-logo.jpg" alt="SAVG" style="width:40px;height:40px;border-radius:50%;object-fit:cover;mix-blend-mode:lighten;opacity:0.85;flex-shrink:0;"><span class="grad">SΛVG ESPORTS</span></a>
-          <p class="footer-desc">Professional esports organization competing in Rocket League and Fortnite. Built to win.</p>
-          <div class="social-row">
-            <a href="#" class="social-btn">𝕏</a>
-            <a href="#" class="social-btn">Tw</a>
-            <a href="#" class="social-btn">YT</a>
-            <a href="#" class="social-btn">IG</a>
-            <a href="#" class="social-btn">TK</a>
-            <a href="#" class="social-btn">Dc</a>
-          </div>
-        </div>
-        <div class="footer-col"><h4>Navigate</h4><ul><li><a href="teams.html">Teams</a></li><li><a href="creators.html">Creators</a></li><li><a href="news.html">News</a></li><li><a href="about.html">About</a></li></ul></div>
-        <div class="footer-col"><h4>Organization</h4><ul><li><a href="partners.html">Partners</a></li><li><a href="about.html#contact">Contact</a></li><li><a href="mailto:info@savgesports.com">Media</a></li></ul></div>
-        <div class="footer-col"><h4>Compete</h4><ul><li><a href="teams.html#rocket-league">Rocket League</a></li><li><a href="teams.html#fortnite">Fortnite</a></li><li><a href="creators.html">Creators</a></li></ul></div>
+    </a>
+    <a href="#" class="news-card reveal reveal-d3">
+      <div class="nc-img" style="background:linear-gradient(135deg,var(--bg-elevated),rgba(37,99,235,0.18));"></div>
+      <div class="nc-body">
+        <div class="nc-date">Coming Soon · Creators</div>
+        <div class="nc-title">Creator Roster Reveal Meet the SΛVG Content Team</div>
+        <div class="nc-exc">The people behind the content. Our full creator reveal is coming across all platforms.</div>
       </div>
-      <div class="footer-bottom">
-        <p class="footer-legal">© 2025 Savg Esports, LLC. All rights reserved. Savg Esports, LLC is a Florida limited liability company.</p>
-        <nav class="footer-policy"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></nav>
+    </a>
+    <a href="#" class="news-card reveal reveal-d1">
+      <div class="nc-img" style="background:linear-gradient(135deg,var(--bg-elevated),rgba(37,99,235,0.12));"></div>
+      <div class="nc-body">
+        <div class="nc-date">Coming Soon · Partners</div>
+        <div class="nc-title">First Partnership Activation Announcement</div>
+        <div class="nc-exc">SΛVG is building its partner network. More announcements are on the way.</div>
       </div>
-    </div>
-  </footer>
+    </a>
+  </div>
+</section>
 
-  <script src="js/main.js"></script>
+<section class="section" style="padding-top:0;">
+  <div class="cta-block reveal">
+    <span class="eyebrow eyebrow-center" style="margin-bottom:1rem;">Stay Connected</span>
+    <h2 class="cta-title">Follow <span class="savg">SΛVG</span></h2>
+    <p class="cta-desc">Roster announcements, match results, and content drops happen on the channels first. Follow across every platform.</p>
+    <div style="display:flex;gap:0.75rem;justify-content:center;flex-wrap:wrap;">
+      <a href="#" class="btn btn-outline" style="font-size:0.76rem;padding:0.6rem 1.2rem;">𝕏 Twitter</a>
+      <a href="#" class="btn btn-outline" style="font-size:0.76rem;padding:0.6rem 1.2rem;">Twitch</a>
+      <a href="#" class="btn btn-outline" style="font-size:0.76rem;padding:0.6rem 1.2rem;">YouTube</a>
+      <a href="#" class="btn btn-outline" style="font-size:0.76rem;padding:0.6rem 1.2rem;">Instagram</a>
+      <a href="https://www.tiktok.com/@savgesports" class="btn btn-outline" style="font-size:0.76rem;padding:0.6rem 1.2rem;" target="_blank" rel="noopener">TikTok</a>
+      <a href="#" class="btn btn-outline" style="font-size:0.76rem;padding:0.6rem 1.2rem;">Discord</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="footer-inner"><div class="footer-grid">
+  <div><a href="index.html" class="footer-logo-link"><img src="assets/savg-logo.jpg" alt="SAVG" class="footer-logo-img"><span class="footer-logo-text savg">SΛVG ESPORTS</span></a><p class="footer-desc">Professional esports organization competing at the highest level. United States.</p><div class="social-row"><a href="#" class="social-btn">𝕏</a><a href="#" class="social-btn">Tw</a><a href="#" class="social-btn">YT</a><a href="#" class="social-btn">IG</a><a href="https://www.tiktok.com/@savgesports" class="social-btn" target="_blank" rel="noopener">TK</a><a href="#" class="social-btn">Dc</a></div></div>
+  <div class="footer-col"><h4>Compete</h4><ul><li><a href="games.html">All Games</a></li><li><a href="teams.html">Roster</a></li><li><a href="creators.html">Creators</a></li><li><a href="apply.html">Apply Now</a></li></ul></div>
+  <div class="footer-col"><h4>Organization</h4><ul><li><a href="partners.html">Partners</a></li><li><a href="about.html">About</a></li><li><a href="news.html">News</a></li><li><a href="merch.html">Merch</a></li></ul></div>
+  <div class="footer-col"><h4>Connect</h4><ul><li><a href="about.html#contact">Contact</a></li><li><a href="mailto:info@savgesports.com">General</a></li><li><a href="mailto:partnerships@savgesports.com">Partnerships</a></li><li><a href="privacy.html">Privacy Policy</a></li></ul></div>
+</div><div class="footer-bottom"><p class="footer-legal">© 2025 Savg Esports, LLC. All rights reserved. Savg Esports, LLC is a Florida limited liability company.</p><nav class="footer-policy"><a href="privacy.html">Privacy Policy</a><a href="#">Terms of Use</a></nav></div></div></footer>
+<script src="js/main.js"></script>
 </body>
 </html>

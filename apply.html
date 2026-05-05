@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply | SΛVG Esports</title>
+  <meta name="description" content="Apply to join SΛVG Esports as a pro player, content creator, or staff member.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-logo"><img src="assets/savg-logo.jpg" alt="SAVG" class="nav-logo-img"><span class="savg">SΛVG</span>&nbsp;ESPORTS</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="games.html">Compete</a></li><li><a href="teams.html">Roster</a></li><li><a href="creators.html">Creators</a></li><li><a href="partners.html">Partners</a></li><li><a href="news.html">News</a></li><li><a href="about.html">About</a></li>
+    <li><a href="apply.html" class="nav-cta">Apply Now</a></li>
+  </ul>
+  <button class="nav-burger" id="burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+
+<section class="page-hero" style="min-height:50vh;">
+  <div class="ph-bg"></div>
+  <div class="ph-inner">
+    <span class="eyebrow" style="margin-bottom:1.25rem;">Join the Organization</span>
+    <h1 class="ph-title">Apply to <span class="savg">SΛVG</span></h1>
+    <p style="max-width:500px;color:var(--text-sub);margin-top:1.25rem;font-size:1rem;line-height:1.75;">SΛVG is always looking for players, creators, and staff who operate at the highest level. Select your track below and tell us about yourself.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-hd reveal" style="margin-bottom:2rem;">
+    <span class="eyebrow" style="margin-bottom:0.75rem;">Select a Track</span>
+    <h2 class="section-title">What Are You <span class="savg">Applying For</span>?</h2>
+  </div>
+
+  <div class="apply-tracks reveal">
+    <div class="track-option" data-track="player">
+      <div class="track-icon">🎮</div>
+      <div class="track-name">Pro Player</div>
+      <div class="track-desc">Competitive roster position across any active or upcoming division</div>
+    </div>
+    <div class="track-option" data-track="creator">
+      <div class="track-icon">📹</div>
+      <div class="track-name">Content Creator</div>
+      <div class="track-desc">Streaming or content creation on Twitch, YouTube, TikTok, or Instagram</div>
+    </div>
+    <div class="track-option" data-track="staff">
+      <div class="track-icon">🏛️</div>
+      <div class="track-name">Staff / Management</div>
+      <div class="track-desc">Coaching, management, operations, design, or content strategy roles</div>
+    </div>
+  </div>
+
+  <form class="apply-form reveal" action="https://formspree.io/f/savgesports" method="POST">
+    <input type="hidden" name="_subject" value="SΛVG Esports Application">
+
+    <div data-track="all" class="track-section">
+      <div class="form-grid">
+        <div class="form-group">
+          <label class="form-label">Full Name</label>
+          <input type="text" name="name" class="form-input" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Gamertag / Handle</label>
+          <input type="text" name="gamertag" class="form-input" placeholder="Your gamertag or username">
+        </div>
+      </div>
+      <div class="form-grid">
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input type="email" name="email" class="form-input" placeholder="you@email.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Phone (Optional)</label>
+          <input type="tel" name="phone" class="form-input" placeholder="(555) 000-0000">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Country / Region</label>
+        <input type="text" name="location" class="form-input" placeholder="United States, Canada, etc.">
+      </div>
+    </div>
+
+    <div data-track="player" class="track-section">
+      <div class="form-group">
+        <label class="form-label">Game(s) You Compete In</label>
+        <select name="game" class="form-select">
+          <option value="">Select a game</option>
+          <option>Rocket League</option>
+          <option>Fortnite</option>
+          <option>Call of Duty</option>
+          <option>Valorant</option>
+          <option>Counter-Strike</option>
+          <option>Apex Legends</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Peak Rank / Achievements</label>
+        <input type="text" name="rank" class="form-input" placeholder="SSL, Champ, Top X% FNCS, etc.">
+      </div>
+    </div>
+
+    <div data-track="creator" class="track-section">
+      <div class="form-group">
+        <label class="form-label">Primary Platform</label>
+        <select name="platform" class="form-select">
+          <option value="">Select a platform</option>
+          <option>Twitch</option>
+          <option>YouTube</option>
+          <option>TikTok</option>
+          <option>Instagram</option>
+          <option>Multi-platform</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Content Type</label>
+        <input type="text" name="content_type" class="form-input" placeholder="Gameplay, highlights, IRL, commentary, etc.">
+      </div>
+    </div>
+
+    <div data-track="staff" class="track-section">
+      <div class="form-group">
+        <label class="form-label">Role You Are Applying For</label>
+        <select name="staff_role" class="form-select">
+          <option value="">Select a role</option>
+          <option>Head Coach</option>
+          <option>Assistant Coach</option>
+          <option>Team Manager</option>
+          <option>Content Strategist</option>
+          <option>Graphic Designer</option>
+          <option>Video Editor</option>
+          <option>Social Media Manager</option>
+          <option>Other</option>
+        </select>
+      </div>
+    </div>
+
+    <div data-track="all" class="track-section">
+      <div class="form-group">
+        <label class="form-label">Social / Streaming Links</label>
+        <input type="text" name="links" class="form-input" placeholder="Twitch, YouTube, TikTok, Twitter links">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Why SΛVG?</label>
+        <textarea name="message" class="form-textarea" placeholder="Tell us who you are, what you bring, and why you want to be part of SΛVG." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1rem;padding:1rem;">Submit Application</button>
+      <p style="margin-top:1rem;font-size:0.78rem;color:var(--text-muted);text-align:center;">We review every application and respond to those we move forward with. Thank you for reaching out.</p>
+    </div>
+  </form>
+</section>
+
+<footer class="footer"><div class="footer-inner"><div class="footer-grid">
+  <div><a href="index.html" class="footer-logo-link"><img src="assets/savg-logo.jpg" alt="SAVG" class="footer-logo-img"><span class="footer-logo-text savg">SΛVG ESPORTS</span></a><p class="footer-desc">Professional esports organization competing at the highest level. United States.</p><div class="social-row"><a href="#" class="social-btn">𝕏</a><a href="#" class="social-btn">Tw</a><a href="#" class="social-btn">YT</a><a href="#" class="social-btn">IG</a><a href="https://www.tiktok.com/@savgesports" class="social-btn" target="_blank" rel="noopener">TK</a><a href="#" class="social-btn">Dc</a></div></div>
+  <div class="footer-col"><h4>Compete</h4><ul><li><a href="games.html">All Games</a></li><li><a href="teams.html">Roster</a></li><li><a href="creators.html">Creators</a></li><li><a href="apply.html">Apply Now</a></li></ul></div>
+  <div class="footer-col"><h4>Organization</h4><ul><li><a href="partners.html">Partners</a></li><li><a href="about.html">About</a></li><li><a href="news.html">News</a></li><li><a href="merch.html">Merch</a></li></ul></div>
+  <div class="footer-col"><h4>Connect</h4><ul><li><a href="about.html#contact">Contact</a></li><li><a href="mailto:info@savgesports.com">General</a></li><li><a href="mailto:partnerships@savgesports.com">Partnerships</a></li><li><a href="privacy.html">Privacy Policy</a></li></ul></div>
+</div><div class="footer-bottom"><p class="footer-legal">© 2025 Savg Esports, LLC. All rights reserved. Savg Esports, LLC is a Florida limited liability company.</p><nav class="footer-policy"><a href="privacy.html">Privacy Policy</a><a href="#">Terms of Use</a></nav></div></div></footer>
+<script src="js/main.js"></script>
+</body>
+</html>
