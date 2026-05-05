@@ -19,7 +19,7 @@
   --glow:         0 0 40px rgba(37,99,235,0.2);
   --radius:       8px;
   --nav-h:        72px;
-  --font-d:       'Rajdhani', 'Barlow Condensed', sans-serif;
+  --font-d:       'Rajdhani', 'lambda-fix', sans-serif;
   --font-b:       'Inter', -apple-system, sans-serif;
 }
 
@@ -38,8 +38,17 @@ a { color: inherit; }
   background-clip: text;
 }
 
-/* Rajdhani has no Greek characters — Barlow Condensed is loaded as the
-   explicit fallback so Λ uses a font with matching cap-height and weight */
+/* Rajdhani has no Greek Λ (U+039B). This @font-face rule loads the
+   system Helvetica/Arial for ONLY that character, scaled up 112% so
+   its cap-height matches Rajdhani's. Helvetica renders Λ as a true
+   chevron (no crossbar), unlike Barlow/Exo which mirror the letter A. */
+@font-face {
+  font-family: 'lambda-fix';
+  src: local('Helvetica Neue'), local('Helvetica'), local('Arial');
+  unicode-range: U+039B;
+  size-adjust: 112%;
+  font-weight: 700;
+}
 
 /* ── Typography ── */
 h1,h2,h3,h4,h5 { font-family: var(--font-d); font-weight: 700; line-height: 1.1; letter-spacing: 0.03em; }
@@ -142,7 +151,7 @@ h1,h2,h3,h4,h5 { font-family: var(--font-d); font-weight: 700; line-height: 1.1;
 
 .hero-left { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; width: 100%; }
 .hero-brand { display: flex; align-items: center; gap: 1.25rem; margin-bottom: 1.5rem; justify-content: center; }
-.hero-logo-mark { width: 90px; height: 90px; border-radius: 50%; object-fit: cover; mix-blend-mode: lighten; opacity: 0.9; filter: drop-shadow(0 0 24px rgba(37,99,235,0.45)); flex-shrink: 0; }
+.hero-logo-mark { width: 130px; height: 130px; border-radius: 50%; object-fit: cover; mix-blend-mode: lighten; opacity: 0.9; filter: drop-shadow(0 0 30px rgba(37,99,235,0.55)); flex-shrink: 0; }
 .hero-wordmark { font-family: var(--font-d); font-size: clamp(3.5rem, 8vw, 8rem); font-weight: 900; letter-spacing: 0.08em; text-transform: uppercase; line-height: 0.9; text-align: center; }
 .hero-wordmark .savg { display: block; font-size: inherit; }
 .hero-sub { font-family: var(--font-d); font-size: clamp(0.9rem, 2vw, 1.2rem); font-weight: 600; letter-spacing: 0.28em; text-transform: uppercase; color: var(--text-sub); margin-bottom: 1rem; text-align: center; }
