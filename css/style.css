@@ -656,7 +656,7 @@ h1,h2,h3,h4,h5 {
   text-transform: uppercase;
   color: var(--text-muted);
 }
-.partner-slot img { max-height: 32px; object-fit: contain; }
+.partner-slot img { max-height: 36px; max-width: 110px; object-fit: contain; mix-blend-mode: lighten; }
 
 /* ============================================================
    CTA BLOCK
@@ -927,6 +927,84 @@ h1,h2,h3,h4,h5 {
 .reveal-3 { transition-delay: 0.2s; }
 .reveal-4 { transition-delay: 0.3s; }
 .reveal-5 { transition-delay: 0.4s; }
+
+/* ============================================================
+   PARTNER SHOWCASE (partners.html)
+   ============================================================ */
+.partner-showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.partner-showcase-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2.25rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.25rem;
+  transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+.partner-showcase-card:hover {
+  border-color: var(--border-accent);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-glow);
+}
+
+.psc-logo-wrap {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.psc-logo {
+  max-height: 68px;
+  max-width: 180px;
+  width: auto;
+  object-fit: contain;
+  mix-blend-mode: lighten;
+  filter: brightness(1.15) saturate(0.75);
+  opacity: 0.82;
+  transition: opacity 0.3s, filter 0.3s;
+}
+.psc-logo-png {
+  /* PNGs with transparency render crisper — no blend override needed */
+  mix-blend-mode: normal;
+  filter: brightness(1.1) saturate(0.7);
+  opacity: 0.85;
+}
+.partner-showcase-card:hover .psc-logo,
+.partner-showcase-card:hover .psc-logo-png {
+  opacity: 1;
+  filter: brightness(1.2) saturate(1);
+}
+
+.psc-name {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text);
+}
+.psc-desc {
+  font-size: 0.82rem;
+  color: var(--text-sub);
+  line-height: 1.65;
+  max-width: 240px;
+}
+
+/* Partner strip slot as link */
+.partner-logos a.partner-slot {
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+.partner-logos a.partner-slot:hover { opacity: 0.65 !important; }
 
 /* ============================================================
    RESPONSIVE
