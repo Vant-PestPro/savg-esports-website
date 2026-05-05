@@ -405,7 +405,7 @@ h1,h2,h3,h4,h5 { font-family: var(--font-d); font-weight: 700; line-height: 1.1;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
 }
 .page-hero-photo .php-overlay {
   position: absolute;
@@ -542,7 +542,7 @@ h1,h2,h3,h4,h5 { font-family: var(--font-d); font-weight: 700; line-height: 1.1;
 .nc-exc   { font-size: 0.84rem; color: var(--text-sub); line-height: 1.65; }
 
 .news-featured {
-  display: grid; grid-template-columns: 1fr 1fr;
+  display: grid; grid-template-columns: 1fr;
   background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: var(--radius);
   overflow: hidden; text-decoration: none; color: inherit; margin-bottom: 3rem;
   transition: border-color 0.3s;
@@ -643,6 +643,7 @@ h1,h2,h3,h4,h5 { font-family: var(--font-d); font-weight: 700; line-height: 1.1;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
   transition: opacity 0.4s;
 }
 .merch-card-img .hover-img {
@@ -651,6 +652,7 @@ h1,h2,h3,h4,h5 { font-family: var(--font-d); font-weight: 700; line-height: 1.1;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
   opacity: 0;
   transition: opacity 0.4s;
 }
