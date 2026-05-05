@@ -42,23 +42,16 @@ a { color: inherit; }
 /* Rajdhani has no Greek lambda. Use a Rajdhani V rotated 180 degrees as the lambda
    in the hero wordmark. Same weight, width, optical size.
    Gradient is 315deg so it appears as 135deg after 180deg rotation. */
-/* Drawn Λ glyph: CSS polygon matching Rajdhani Bold stroke weight.
-   No font fallback involved. Scales with font-size via em units. */
+/* V character rotated 180 degrees = perfect lambda.
+   Must be a SIBLING span (not nested inside .savg) so gradients don't conflict. */
 .savg-lv {
   display: inline-block;
-  width: 0.60em;
-  height: 0.74em;
-  vertical-align: -0.08em;
-  position: relative;
-  flex-shrink: 0;
-}
-.savg-lv::before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, #2563EB 0%, #06B6D4 100%);
-  clip-path: polygon(50% 0%, 0% 100%, 14% 100%, 50% 17%, 86% 100%, 100% 100%);
+  transform: rotate(180deg);
+  background: linear-gradient(315deg, #2563EB 0%, #06B6D4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  vertical-align: -0.04em;
 }
 
 /* -- Typography -- */
