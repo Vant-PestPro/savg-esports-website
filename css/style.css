@@ -150,8 +150,8 @@ h1,h2,h3,h4,h5 { font-family: var(--font-d); font-weight: 700; line-height: 1.1;
 .hero-lambda-bg { position: absolute; right: -10%; top: 50%; transform: translateY(-50%); font-family: var(--font-d); font-weight: 900; font-size: clamp(18rem, 35vw, 42rem); line-height: 1; user-select: none; pointer-events: none; background: linear-gradient(135deg, rgba(37,99,235,0.08) 0%, rgba(6,182,212,0.04) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: lambdaFloat 10s ease-in-out infinite; z-index: 0; }
 
 .hero-left { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; width: 100%; }
-.hero-brand { display: flex; align-items: center; gap: 1.25rem; margin-bottom: 1.5rem; justify-content: center; }
-.hero-logo-mark { width: 130px; height: 130px; border-radius: 50%; object-fit: cover; mix-blend-mode: lighten; opacity: 0.9; filter: drop-shadow(0 0 30px rgba(37,99,235,0.55)); flex-shrink: 0; }
+.hero-brand { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; margin-bottom: 1.5rem; }
+.hero-logo-mark { width: 110px; height: 110px; border-radius: 50%; object-fit: cover; mix-blend-mode: lighten; opacity: 0.9; filter: drop-shadow(0 0 30px rgba(37,99,235,0.55)); }
 .hero-wordmark { font-family: var(--font-d); font-size: clamp(3.5rem, 8vw, 8rem); font-weight: 900; letter-spacing: 0.08em; text-transform: uppercase; line-height: 0.9; text-align: center; }
 .hero-wordmark .savg { display: block; font-size: inherit; }
 .hero-sub { font-family: var(--font-d); font-size: clamp(0.9rem, 2vw, 1.2rem); font-weight: 600; letter-spacing: 0.28em; text-transform: uppercase; color: var(--text-sub); margin-bottom: 1rem; text-align: center; }
