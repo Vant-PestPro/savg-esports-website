@@ -39,18 +39,19 @@ a { color: inherit; }
   background-clip: text;
 }
 
-/* Rajdhani has no Greek lambda. Use a Rajdhani V rotated 180 degrees as the lambda
-   in the hero wordmark. Same weight, width, optical size.
-   Gradient is 315deg so it appears as 135deg after 180deg rotation. */
-/* Inline SVG wordmark: SΛVG rendered with measured character positions.
-   S and VG use Rajdhani text. Lambda is a polygon matching font stroke weight.
-   Gradient spans the full word in userSpaceOnUse coordinates. */
-.savg-svg {
-  height: 1.1em;
-  width: auto;
-  vertical-align: -0.15em;
+/* SΛVG Wordmark — Exo 2 ExtraBold with native Greek Lambda glyph support.
+   No SVG polygon hacks. No font fallback. Just works. */
+.savg-wordmark {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  line-height: 1;
+  background: linear-gradient(90deg, var(--accent) 0%, var(--cyan) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   display: inline-block;
-  overflow: visible;
+  vertical-align: baseline;
 }
 
 /* -- Typography -- */
