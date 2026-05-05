@@ -19,7 +19,7 @@
   --glow:         0 0 40px rgba(37,99,235,0.2);
   --radius:       8px;
   --nav-h:        72px;
-  --font-d:       'Rajdhani', 'lambda-fix', sans-serif;
+  --font-d:       'Rajdhani', sans-serif;
   --font-b:       'Inter', -apple-system, sans-serif;
 }
 
@@ -38,16 +38,16 @@ a { color: inherit; }
   background-clip: text;
 }
 
-/* Rajdhani has no Greek Λ (U+039B). This @font-face rule loads the
-   system Helvetica/Arial for ONLY that character, scaled up 112% so
-   its cap-height matches Rajdhani's. Helvetica renders Λ as a true
-   chevron (no crossbar), unlike Barlow/Exo which mirror the letter A. */
-@font-face {
-  font-family: 'lambda-fix';
-  src: local('Helvetica Neue'), local('Helvetica'), local('Arial');
-  unicode-range: U+039B;
-  size-adjust: 112%;
-  font-weight: 700;
+/* Rajdhani has no Greek Λ. Use a Rajdhani V rotated 180° as the lambda
+   in the hero wordmark — same weight, same width, same optical size.
+   Gradient compensated: 315deg appears as 135deg after 180deg rotation. */
+.savg-lv {
+  display: inline-block;
+  transform: rotate(180deg);
+  background: linear-gradient(315deg, #2563EB 0%, #06B6D4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 /* ── Typography ── */
@@ -342,7 +342,11 @@ h1,h2,h3,h4,h5 { font-family: var(--font-d); font-weight: 700; line-height: 1.1;
 .partner-logo-item:hover { opacity: 1; filter: grayscale(0); }
 .partner-logo-item img { max-width: 100%; max-height: 100%; object-fit: contain; mix-blend-mode: lighten; }
 .partner-logo-item img.no-blend { mix-blend-mode: normal; }
-.partner-logo-item img.oval-mask { clip-path: ellipse(46% 44% at 50% 50%); }
+.partner-logo-item.pest-pro-oval {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.partner-logo-item img.oval-mask { /* kept for card use */ }
 .partner-logo-item.jlm-large { width: 210px; height: 84px; }
 
 /* Partners page showcase */
@@ -356,7 +360,13 @@ h1,h2,h3,h4,h5 { font-family: var(--font-d); font-weight: 700; line-height: 1.1;
 .partner-card-logo { height: 72px; width: 100%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem; }
 .partner-card-logo img { max-height: 72px; max-width: 160px; object-fit: contain; mix-blend-mode: lighten; filter: grayscale(0); transition: all 0.3s; }
 .partner-card-logo img.no-blend { mix-blend-mode: normal; }
-.partner-card-logo img.oval-mask { clip-path: ellipse(46% 44% at 50% 50%); }
+.partner-card-logo.pest-pro-card-logo {
+  background: transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 72px;
+  height: 72px;
+}
 .partner-card-logo img.jlm-card { max-height: 108px; max-width: 240px; }
 .partner-card-name { font-family: var(--font-d); font-size: 1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.5rem; }
 .partner-card-desc { font-size: 0.82rem; color: var(--text-sub); line-height: 1.6; }
