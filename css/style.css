@@ -586,6 +586,9 @@ h1,h2,h3,h4,h5 { font-family: var(--font-d); font-weight: 700; line-height: 1.1;
 .partner-card-logo img.no-blend { mix-blend-mode: normal; }
 .partner-card-logo img.jlm-card { max-height: 108px; max-width: 240px; }
 .partner-card-name { font-family: var(--font-d); font-size: 1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.5rem; }
+.partner-card-name a { color: inherit; text-decoration: none; }
+.partner-card-name a:hover { color: var(--accent); }
+.partner-card-logo a { display: block; }
 .partner-card-desc { font-size: 0.82rem; color: var(--text-sub); line-height: 1.6; }
 
 /* ============================================================
