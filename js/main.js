@@ -78,6 +78,18 @@ if (tracks.length) {
   if (tracks[0]) tracks[0].click();
 }
 
+/* -- Merch: mobile touch image swap -- */
+document.querySelectorAll('.merch-card').forEach(card => {
+  const imgWrap = card.querySelector('.merch-card-img');
+  if (!imgWrap) return;
+  imgWrap.addEventListener('touchstart', () => {
+    card.classList.add('touch-active');
+  }, { passive: true });
+  imgWrap.addEventListener('touchend', () => {
+    setTimeout(() => card.classList.remove('touch-active'), 400);
+  }, { passive: true });
+});
+
 /* -- Merch: size button selector -- */
 document.querySelectorAll('.size-selector').forEach(group => {
   group.querySelectorAll('.size-btn').forEach(btn => {

@@ -656,8 +656,10 @@ h1,h2,h3,h4,h5 { font-family: var(--font-d); font-weight: 700; line-height: 1.1;
   opacity: 0;
   transition: opacity 0.4s;
 }
-.merch-card:hover .primary-img { opacity: 0; }
-.merch-card:hover .hover-img { opacity: 1; }
+.merch-card:hover .primary-img,
+.merch-card.touch-active .primary-img { opacity: 0; }
+.merch-card:hover .hover-img,
+.merch-card.touch-active .hover-img { opacity: 1; }
 .merch-card-body { padding: 1.5rem; }
 .merch-card-name {
   font-family: var(--font-d);
