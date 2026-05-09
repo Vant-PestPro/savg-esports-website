@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Confirmed | SAVG Esports</title>
+  <meta name="description" content="Thank you for your SAVG Esports order.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@800&family=Rajdhani:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=5">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-logo">
+    <img src="assets/savg-logo.jpg" alt="SAVG Esports" class="nav-logo-img">
+    <span><span class="savg-wordmark">SΛVG</span> ESPORTS</span>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="games.html">Compete</a></li>
+    <li><a href="teams.html">Roster</a></li>
+    <li><a href="creators.html">Creators</a></li>
+    <li><a href="partners.html">Partners</a></li>
+    <li><a href="merch.html">Merch</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="apply.html" class="nav-cta">Apply Now</a></li>
+  </ul>
+  <a href="cart.html" class="cart-nav-btn" aria-label="View cart">
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+      <path d="M1 1h4l2.68 13.39a2 2 0 001.98 1.61h9.72a2 2 0 001.98-1.61L23 6H6"/>
+    </svg>
+    <span class="cart-badge" id="cartBadge" style="display:none;">0</span>
+  </a>
+  <button class="nav-burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- CONFIRMED -->
+<div class="order-confirmed-page">
+  <div class="order-confirmed-card reveal">
+    <div class="order-confirmed-icon">✓</div>
+    <h1 class="order-confirmed-title">Order <span class="savg">Confirmed</span></h1>
+    <p class="order-confirmed-sub">
+      Your payment was processed securely through PayPal. You'll receive a confirmation email from PayPal shortly.<br><br>
+      Thank you for repping <span class="savg-wordmark">SΛVG</span> — your gear is on its way.
+    </p>
+    <div class="order-confirmed-actions">
+      <a href="merch.html" class="btn btn-primary">Shop More Merch</a>
+      <a href="index.html" class="btn btn-outline">Back to Home</a>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/cart.js"></script>
+<script>
+  /* Clear cart after successful PayPal return */
+  localStorage.removeItem('savg_cart_v1');
+</script>
+</body>
+</html>
