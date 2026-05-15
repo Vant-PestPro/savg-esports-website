@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@800&family=Rajdhani:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=5">
+  <link rel="stylesheet" href="css/style.css?v=13">
 </head>
 <body>
 
@@ -74,7 +74,8 @@
     </div>
   </div>
 
-  <form class="apply-form reveal" action="https://formspree.io/brumsey604@gmail.com" method="POST">
+  <form class="apply-form reveal" name="apply" method="POST" data-netlify="true" action="/apply-success.html">
+    <input type="hidden" name="form-name" value="apply">
     <input type="hidden" name="_subject" value="SAVG Esports Application">
 
     <div data-track="all" class="track-section">
@@ -206,7 +207,7 @@
         <ul>
           <li><a href="partners.html">Partners</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="merch.html">Merch</a></li><li><a href="news.html">News</a></li>
+          <li><a href="news.html">News</a></li>
           <li><a href="merch.html">Merch</a></li>
         </ul>
       </div>
